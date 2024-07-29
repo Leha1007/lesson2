@@ -3,7 +3,8 @@ a = len(numbers)
 primes = []
 not_primes = []
 for j in range(a):
-    primes.append(numbers[j])
+    if numbers[j] != 1:
+        primes.append(numbers[j])
     for k in range(2, numbers[j]):
         if numbers[j] % k == 0:
             not_primes.append(numbers[j])
